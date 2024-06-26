@@ -1,0 +1,130 @@
+* {
+  color: #0c0b0b;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #9db9b9, #5a5b5b); 
+}
+
+.App {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #cddde1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button {
+  background-color: #34c5d5;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1076b1;
+}
+
+.item-list {
+  margin-top: 30px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 14px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.item:hover {
+  background-color: #f1f1f1;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: right;
+}
+
+.download-btn {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.download-btn:hover {
+  background-color: #005684;
+}
+
+@media (max-width: 768px) {
+  .App {
+      padding: 15px;
+      margin: 20px;
+  }
+  .item{
+    flex-direction: column;
+    align-items: start;
+    margin: 3px 3px;
+
+  }
+
+  button, .download-btn {
+      width: 30%;
+      font-size: 12px;
+      padding: 6px;
+      margin: 12px 0px;
+  }
+
+  input {
+      padding: 10px;
+  }
+ 
+  
+}
+
+.heading{
+  margin-top: 100px;
+  background: linear-gradient(180deg, #9db9b9, #5a5b5b); 
+  text-align: center;
+  align-items: center;
+}
